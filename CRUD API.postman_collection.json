@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "649d14bd-62dc-429c-b992-4e051ddad3e4",
+		"name": "CRUD API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34489304"
+	},
+	"item": [
+		{
+			"name": "CREATE employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Yash",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "yash@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "1234567891",
+							"type": "text"
+						},
+						{
+							"key": "about",
+							"value": "hey its me",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "birthdate",
+							"value": "1999-04-05",
+							"type": "text"
+						},
+						{
+							"key": "hobbies",
+							"value": "games",
+							"type": "text"
+						},
+						{
+							"key": "intrest",
+							"value": "coding",
+							"type": "text"
+						},
+						{
+							"key": "profilePic",
+							"type": "file",
+							"src": "/E:/Practice new/CRUD API WITH MySQL/employee-form/uploads/IMG_20230417_002514-01.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/api/employees",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:4000/api/employees",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE employees",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Yash Naik",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "yash123@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/api/employees/1?name=Yash Naik",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Yash Naik"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE employees",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:4000/api/employees/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
